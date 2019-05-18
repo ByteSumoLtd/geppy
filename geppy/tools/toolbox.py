@@ -38,7 +38,7 @@ class Toolbox(base.Toolbox):
         Initialize an *empty* toolbox with only the default :meth:`clone` and :meth:`map` methods.
         """
         super().__init__()
-        self._pbs = collections.OrderedDict()
+        self._pbs = collections.list(OrderedDict())
 
     def register(self, alias, function, *args, **kargs):
         """
